@@ -1,6 +1,9 @@
 .aside {
+  height: 100%;
+  width: 280px;
+
   &__container {
-    height: 100vh;
+    height: 100%;
     background-color: #040b14;
 
     hr {
@@ -14,14 +17,41 @@
     background: rgba(255, 255, 255, 0.1);
     margin-bottom: 0.7rem;
   }
+
+  &__profile-title {
+    opacity: 0.8;
+    letter-spacing: 0.4px;
+    // font-weight: 100;
+  }
+
   .nav {
     li {
-      font-size: 1.1rem;
+      font-size: 1rem;
       margin: 0.2rem 0;
       letter-spacing: 0.7px;
 
+      .nav-link {
+        opacity: 0.6;
+        @include transition-ease;
+      }
+
+      &:hover {
+        font-size: 1.1rem;
+
+        .nav-link {
+          opacity: 1;
+        }
+
+        .bi {
+          color: #0d6efd;
+          @include transition-ease;
+        }
+      }
+
       .active {
+        font-size: 1.1rem;
         background: transparent;
+        opacity: 1;
 
         .bi {
           color: #0d6efd;
@@ -52,11 +82,19 @@
       justify-content: center;
       align-items: center;
 
-      &:hover {
-      }
-
       .bi {
         color: #fff;
+      }
+    }
+
+    .linkedin {
+      a:hover {
+        background: #0072b1;
+      }
+    }
+    .github {
+      a:hover {
+        background: #4078c0;
       }
     }
   }

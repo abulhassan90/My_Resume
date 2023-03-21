@@ -1,9 +1,5 @@
-.aside {
-  height: 100%;
-  width: 280px;
-}
 .aside__container {
-  height: 100%;
+  height: 100vh;
   background-color: #040b14;
 }
 .aside__container hr {
@@ -15,36 +11,20 @@
   background: rgba(255, 255, 255, 0.1);
   margin-bottom: 0.7rem;
 }
-.aside__profile-title {
-  opacity: 0.8;
-  letter-spacing: 0.4px;
-}
 .aside .nav li {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 0.2rem 0;
   letter-spacing: 0.7px;
 }
 .aside .nav li .nav-link {
-  opacity: 0.6;
-  transition: all 0.4s ease-in-out;
-}
-.aside .nav li:hover {
-  font-size: 1.1rem;
-}
-.aside .nav li:hover .nav-link {
-  opacity: 1;
-}
-.aside .nav li:hover .bi {
-  color: #0d6efd;
-  transition: all 0.4s ease-in-out;
+  background-color: #fff;
 }
 .aside .nav li .active {
-  font-size: 1.1rem;
   background: transparent;
-  opacity: 1;
 }
 .aside .nav li .active .bi {
   color: #0d6efd;
+  background-color: #fff;
 }
 .aside .nav li .bi {
   font-size: 1.3rem;
@@ -70,14 +50,4 @@
 }
 .aside .social-icons a .bi {
   color: #fff;
-}
-.aside .social-icons .linkedin a:hover {
-  background: #0072b1;
-}
-.aside .social-icons .github a:hover {
-  background: #4078c0;
-}
-
-.main {
-  margin-left: 280px;
 }/*# sourceMappingURL=main.css.map */
