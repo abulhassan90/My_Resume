@@ -1,14 +1,22 @@
 (() => {
   "use strict";
 
+  let offcanvas = document.querySelector(".offcanvas-collapse");
+  let navbarToggle = document.querySelector("#navbarSideCollapse .bi");
+
   document
     .querySelector("#navbarSideCollapse")
     ?.addEventListener("click", () => {
-      document.querySelector(".offcanvas-collapse").classList.toggle("open");
-      document
-        .querySelector("#navbarSideCollapse .bi")
-        .classList.toggle("bi-x");
+      offcanvas.classList.toggle("open");
+      navbarToggle.classList.toggle("bi-x");
     });
+
+  document.onclick = function (e) {
+    if (e.target.id !== "navbarSideCollapse" && e.target.id !== "toggle") {
+      offcanvas.classList.remove("open");
+      navbarToggle.classList.remove("bi-x");
+    }
+  };
 
   document.querySelectorAll(".nav-item").forEach((link) => {
     link.addEventListener("click", (e) => {

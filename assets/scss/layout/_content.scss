@@ -6,9 +6,10 @@
   position: fixed;
   top: 5px;
   right: 10px;
+  z-index: 9999;
 
   #navbarSideCollapse {
-    background-color: #0d6efd;
+    background-color: $primary-color;
     padding: 10px;
     border-radius: 100%;
     width: 45px;
