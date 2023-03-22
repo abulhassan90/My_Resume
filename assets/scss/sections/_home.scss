@@ -1,0 +1,82 @@
+#intro {
+  height: 100vh;
+  background-image: url("../img/intro-bg.jpg");
+  background-position: center bottom;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .content {
+    z-index: 9;
+    color: #fff;
+
+    .name {
+      font-size: 2.5rem;
+
+      .designation {
+        font-weight: 100;
+        font-size: 2rem;
+      }
+    }
+
+    .skill {
+      font-size: 2rem;
+      color: #ffac45;
+      font-weight: 100;
+      display: flex;
+      align-items: center;
+
+      &__text {
+        font-weight: 600;
+        height: 50px;
+        padding-left: 15px;
+
+        & div {
+          height: 50px;
+          color: #fff;
+          padding: 2px 10px;
+          margin-bottom: 50px;
+        }
+      }
+
+      &__one {
+        background-color: red;
+        animation: slide 5s linear infinite;
+      }
+      &__two {
+        background-color: blue;
+      }
+      &__three {
+        background-color: green;
+      }
+
+      @keyframes slide {
+        0% {
+          margin-top: -300px;
+        }
+        5% {
+          margin-top: -200px;
+        }
+        33% {
+          margin-top: -200px;
+        }
+        66% {
+          margin-top: -100px;
+        }
+        100% {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

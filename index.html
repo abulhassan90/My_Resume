@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
+    <!-- Sidebar Menu -->
     <aside
       class="aside fixed-top navbar-collapse offcanvas-collapse"
       id="navbarsExampleDefault"
@@ -34,31 +35,31 @@
         </a>
         <hr />
         <ul class="nav nav-pills flex-column mb-auto">
-          <li class="nav-item">
-            <a href="#" class="nav-link active" aria-current="page">
+          <li class="nav-item active">
+            <a href="#" class="nav-link text-white" aria-current="page">
               <i class="bi bi-house"></i>
               Home
             </a>
           </li>
-          <li>
+          <li class="nav-item">
             <a href="#" class="nav-link text-white">
               <i class="bi bi-person"></i>
               About
             </a>
           </li>
-          <li>
+          <li class="nav-item">
             <a href="#" class="nav-link text-white">
               <i class="bi bi-file-earmark-text"></i>
               Resume
             </a>
           </li>
-          <li>
+          <li class="nav-item">
             <a href="#" class="nav-link text-white">
               <i class="bi bi-award"></i>
               Skills
             </a>
           </li>
-          <li>
+          <li class="nav-item">
             <a href="#" class="nav-link text-white">
               <i class="bi bi-envelope"></i>
               Contact
@@ -82,17 +83,37 @@
       </div>
     </aside>
 
+    <!-- Mobile Navbar -->
+    <nav class="navbar d-lg-none">
+      <button
+        class="navbar-toggler border-0"
+        type="button"
+        id="navbarSideCollapse"
+        aria-label="Toggle navigation"
+      >
+        <i class="bi bi-list"></i>
+      </button>
+    </nav>
+
     <main class="main">
-      <nav class="navbar">
-        <button
-          class="navbar-toggler p-0 border-0"
-          type="button"
-          id="navbarSideCollapse"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </nav>
+      <!-- Intro -->
+      <section id="intro">
+        <div class="content">
+          <h2 class="name">
+            Mohamed Abul Hassan
+            <br /><span class="designation">I'm Web Developer</span>
+          </h2>
+
+          <div class="skill">
+            My Skills are
+            <div class="skill__text">
+              <div class="skill__one">HTML</div>
+              <div class="skill__two">CSS</div>
+              <div class="skill__three">Javascript</div>
+            </div>
+          </div>
+        </div>
+      </section>
       <h1>Hello World</h1>
       <h1>Hello World</h1>
       <h1>Hello World</h1>

@@ -1,3 +1,37 @@
 @mixin transition-ease {
   transition: all 0.4s ease-in-out;
 }
+
+@mixin aside-mobile {
+  .aside {
+    position: absolute;
+    left: -300px;
+    @include transition-ease;
+
+    &.open {
+      left: 0;
+      position: fixed;
+    }
+  }
+  .main {
+    margin-left: 0;
+  }
+}
+
+@mixin media-sm {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}

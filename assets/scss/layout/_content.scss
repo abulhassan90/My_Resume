@@ -1,0 +1,35 @@
+.main {
+  margin-left: 280px;
+}
+
+.navbar {
+  position: fixed;
+  top: 5px;
+  right: 10px;
+
+  #navbarSideCollapse {
+    background-color: #0d6efd;
+    padding: 10px;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    position: relative;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    .bi {
+      color: #fff;
+      font-size: 24px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .bi-x {
+      font-size: 30px;
+    }
+  }
+}

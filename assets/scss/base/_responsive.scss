@@ -1,0 +1,7 @@
+@include media-sm {
+  @include aside-mobile;
+}
+
+@include media-md {
+  @include aside-mobile;
+}

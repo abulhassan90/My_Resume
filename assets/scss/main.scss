@@ -1,5 +1,10 @@
 @import "abstracts/mixins";
+@import "abstracts/functions";
 
-@import "sections/aside";
+@import "layout/aside";
+@import "layout/content";
+
+@import "sections/home";
 @import "sections/about";
-@import "sections/banner";
+
+@import "base/responsive";
