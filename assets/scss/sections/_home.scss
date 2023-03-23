@@ -19,14 +19,13 @@
 
   .content {
     z-index: 9;
-    color: $secondary-color;
+    color: $primary-color;
     .name {
       font-size: 2.5rem;
 
       .designation {
         font-weight: 100;
         font-size: 2rem;
-        color: $secondary-color;
       }
     }
 

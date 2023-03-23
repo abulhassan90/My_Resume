@@ -2,6 +2,10 @@
   padding: 50px 0;
   min-height: 100vh;
 
+  &.bg {
+    background-color: #deebef;
+  }
+
   &__title {
     position: relative;
     margin-bottom: 2rem;
@@ -13,7 +17,7 @@
       width: 100px;
       height: 3px;
       background-color: $primary-color;
-      left: 12px;
+      left: 0;
       bottom: 0;
     }
   }

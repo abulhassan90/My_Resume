@@ -1,0 +1,68 @@
+#resume {
+  .experience {
+    text-align: right;
+    float: right;
+    color: #f5a718;
+    padding-right: 0.5rem;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+  }
+  .content {
+    padding: 20px;
+    .timeline {
+      border-left: 2px solid $primary-color;
+      padding-left: 1.5rem;
+      position: relative;
+      padding-bottom: 1rem;
+
+      &::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        border: 2px solid $primary-color;
+        border-radius: 100%;
+        position: absolute;
+        left: -9px;
+        background: #fff;
+      }
+
+      h4 {
+        line-height: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .period {
+        background-color: rgba($primary-color, 0.2);
+        display: inline-block;
+        padding: 0.3rem 1.2rem;
+        font-weight: 600;
+      }
+
+      .company,
+      .marks {
+        font-size: 1.2rem;
+        font-style: italic;
+        font-weight: 500;
+      }
+
+      .institute {
+        font-size: 1.1rem;
+      }
+
+      ul {
+        li {
+          font-size: 1.1rem;
+          margin-bottom: 0.7rem;
+        }
+      }
+    }
+
+    .education {
+      .timeline {
+        h4 {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}

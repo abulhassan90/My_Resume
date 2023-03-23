@@ -4,5 +4,9 @@
   padding: 0;
 }
 
-$primary-color: #0d6efd;
-$secondary-color: #3f8cff;
+$primary-color: #149ddd;
+$secondary-color: #0086c5;
+
+.color-primary {
+  color: $secondary-color;
+}

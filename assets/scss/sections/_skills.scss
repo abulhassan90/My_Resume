@@ -12,6 +12,10 @@
         right: 0;
       }
     }
+
+    .progress {
+      background: #f7f7f7;
+    }
   }
 
   .testing {
@@ -24,9 +28,18 @@
   }
 
   .works {
+    padding: 1rem 2rem;
+
     .bi {
-      font-size: 3rem;
+      font-size: 2.5rem;
       color: $primary-color;
+      float: right;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-top: 0.2rem;
     }
   }
 }
