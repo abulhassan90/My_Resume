@@ -1,7 +1,8 @@
 #home {
   height: 100vh;
   background-image: url("../img/intro-bg.jpg");
-  background-position: center bottom;
+  background-position: left bottom;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   padding-left: 10%;

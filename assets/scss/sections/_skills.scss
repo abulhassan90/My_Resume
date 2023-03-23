@@ -1,0 +1,32 @@
+#skills {
+  .skill {
+    margin-bottom: 1.3rem;
+    padding: 0 1rem;
+
+    h5 {
+      position: relative;
+      font-size: 1rem;
+
+      .percent {
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+
+  .testing {
+    .text-info {
+      color: #d95dcf !important;
+    }
+    .bg-info {
+      background-color: #d95dcf !important;
+    }
+  }
+
+  .works {
+    .bi {
+      font-size: 3rem;
+      color: $primary-color;
+    }
+  }
+}

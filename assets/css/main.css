@@ -120,7 +120,8 @@
 #home {
   height: 100vh;
   background-image: url("../img/intro-bg.jpg");
-  background-position: center bottom;
+  background-position: left bottom;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   padding-left: 10%;
@@ -201,6 +202,67 @@
   100% {
     margin-top: 0;
   }
+}
+
+.section {
+  padding: 50px 0;
+  min-height: 100vh;
+}
+.section__title {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+.section__title__underline {
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: #0d6efd;
+  left: 12px;
+  bottom: 0;
+}
+.section .content .bio-data {
+  list-style: none;
+  padding-left: 0;
+  -moz-columns: 2;
+       columns: 2;
+}
+.section .content .bio-data li {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+.section .content .bio-data li .bi {
+  color: #0d6efd;
+  margin-right: 0.4rem;
+  font-weight: bold;
+}
+.section .content .bio-data li .label {
+  font-weight: bold;
+}
+
+#skills .skill {
+  margin-bottom: 1.3rem;
+  padding: 0 1rem;
+}
+#skills .skill h5 {
+  position: relative;
+  font-size: 1rem;
+}
+#skills .skill h5 .percent {
+  position: absolute;
+  right: 0;
+}
+#skills .testing .text-info {
+  color: #d95dcf !important;
+}
+#skills .testing .bg-info {
+  background-color: #d95dcf !important;
+}
+#skills .works .bi {
+  font-size: 3rem;
+  color: #0d6efd;
 }
 
 @media screen and (max-width: 767px) {
