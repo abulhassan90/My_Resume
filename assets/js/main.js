@@ -27,4 +27,22 @@
       e.currentTarget.className += " active";
     });
   });
+
+  // Portfolio Category Filter Tab
+  const filterContainer = document.querySelector(".categories");
+
+  const displayFilter = () => {
+    const categories = [
+      "all",
+      ...new Set(portfolio.map((website) => website.category)),
+    ];
+
+    filterContainer.innerHTML = categories
+      .map((category) => {
+        return `<button class="category-btn" data-id="${category}"> ${category} </button>`;
+      })
+      .join("");
+  };
+
+  displayFilter();
 })();

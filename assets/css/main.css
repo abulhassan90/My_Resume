@@ -8,6 +8,11 @@
   color: #0086c5;
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
 .aside {
   height: 100%;
   width: 280px;
@@ -335,6 +340,31 @@
 }
 #resume .content .education .timeline h4 {
   font-size: 1.3rem;
+}
+
+#portfolio__list .filter {
+  display: flex;
+}
+#portfolio__list .filter .categories {
+  display: inline-flex;
+  list-style: none;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  justify-content: center;
+  background: #fff;
+  margin: 0 auto;
+  padding: 0.5rem 2rem;
+  border-radius: 100px;
+}
+#portfolio__list .filter .categories .category-btn {
+  font-weight: 500;
+  color: #333;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+}
+#portfolio__list .filter .categories .category-btn.active {
+  color: #149ddd;
 }
 
 @media screen and (max-width: 767px) {

@@ -1,0 +1,30 @@
+#portfolio {
+  &__list {
+    .filter {
+      display: flex;
+
+      .categories {
+        display: inline-flex;
+        list-style: none;
+        column-gap: 2rem;
+        justify-content: center;
+        background: #fff;
+        margin: 0 auto;
+        padding: 0.5rem 2rem;
+        border-radius: 100px;
+
+        .category-btn {
+          font-weight: 500;
+          color: #333;
+          text-transform: uppercase;
+          border: none;
+          background-color: transparent;
+
+          &.active {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
