@@ -78,7 +78,7 @@
     portfolioList.innerHTML = portfolioCopy
       .map((website) => {
         return `<div class="col-md-4">
-      <div class="website">
+      <div class="website" data-id=${website.id}>
         <img
           src=${website.image}
           alt=${website.name}
@@ -124,4 +124,7 @@
   };
 
   portfolioImgHeight();
+
+  // Portfolio Modal
+  const portfolioDetails = document.querySelector("#portfolio-details");
 })();
