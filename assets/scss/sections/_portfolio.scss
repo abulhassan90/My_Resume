@@ -26,5 +26,58 @@
         }
       }
     }
+
+    .blocks {
+      .website {
+        height: 250px;
+        overflow: hidden;
+        border-radius: 0.5rem;
+        position: relative;
+        margin-bottom: 2rem;
+        @include transition-ease;
+
+        .actions {
+          position: absolute;
+          background-color: rgba($secondary-color, 0.8);
+          left: 0;
+          bottom: -50px;
+          display: flex;
+          width: 100%;
+          @include transition-ease;
+
+          .link {
+            flex: 1;
+            color: #fff;
+            font-size: 2rem;
+            text-align: center;
+            @include transition-ease;
+
+            &:first-child {
+              border-right: 1px solid $secondary-color;
+            }
+
+            &:hover {
+              background-color: $secondary-color;
+            }
+          }
+        }
+
+        &:hover {
+          box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+          .actions {
+            bottom: 0;
+          }
+
+          img {
+            bottom: 0 !important;
+          }
+        }
+
+        img {
+          position: absolute;
+          transition: all 7s ease;
+        }
+      }
+    }
   }
 }

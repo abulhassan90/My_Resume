@@ -366,6 +366,49 @@ a {
 #portfolio__list .filter .categories .category-btn.active {
   color: #149ddd;
 }
+#portfolio__list .blocks .website {
+  height: 250px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  position: relative;
+  margin-bottom: 2rem;
+  transition: all 0.4s ease-in-out;
+}
+#portfolio__list .blocks .website .actions {
+  position: absolute;
+  background-color: rgba(0, 134, 197, 0.8);
+  left: 0;
+  bottom: -50px;
+  display: flex;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+#portfolio__list .blocks .website .actions .link {
+  flex: 1;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+}
+#portfolio__list .blocks .website .actions .link:first-child {
+  border-right: 1px solid #0086c5;
+}
+#portfolio__list .blocks .website .actions .link:hover {
+  background-color: #0086c5;
+}
+#portfolio__list .blocks .website:hover {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+#portfolio__list .blocks .website:hover .actions {
+  bottom: 0;
+}
+#portfolio__list .blocks .website:hover img {
+  bottom: 0 !important;
+}
+#portfolio__list .blocks .website img {
+  position: absolute;
+  transition: all 7s ease;
+}
 
 @media screen and (max-width: 767px) {
   .aside {
