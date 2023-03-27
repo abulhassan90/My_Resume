@@ -19,6 +19,14 @@
       }
     }
   }
+
+  #portfolio__list {
+    .filter {
+      .categories {
+        column-gap: 1.3rem;
+      }
+    }
+  }
 }
 
 @include media-md {

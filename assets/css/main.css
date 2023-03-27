@@ -376,6 +376,7 @@ a {
   border-radius: 0.5rem;
   position: relative;
   margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: all 0.4s ease-in-out;
 }
 #portfolio__list .blocks .website .actions {
@@ -456,6 +457,10 @@ a {
   }
   #home .content .skill__text div {
     padding: 0;
+  }
+  #portfolio__list .filter .categories {
+    -moz-column-gap: 1.3rem;
+         column-gap: 1.3rem;
   }
 }
 @media screen and (max-width: 991px) {
