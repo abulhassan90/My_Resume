@@ -60,6 +60,7 @@
       filterWebsite(e.target.textContent.trim());
       displayPortfolio();
       portfolioImgHeight();
+      portfolioModal();
     });
   });
 
@@ -78,14 +79,15 @@
     portfolioList.innerHTML = portfolioCopy
       .map((website) => {
         return `<div class="col-md-4">
-      <div class="website" data-id=${website.id}>
+      <div class="website">
         <img
           src=${website.image}
           alt=${website.name}
           class="w-100"
         />
-        <div class="actions">
-          <a class="link" href="#!"><i class="bi bi-plus"></i></a>
+        <div class="actions" data-bs-toggle="modal"
+        data-bs-target="#portfolioModal">
+          <a class="link portfolio-popup" href="#!" data-id=${website.id} ><i class="bi bi-plus"></i></a>
           <a
             class="link"
             href=${website.url}
@@ -125,6 +127,32 @@
 
   portfolioImgHeight();
 
-  // Portfolio Modal
-  const portfolioDetails = document.querySelector("#portfolio-details");
+  // Portfolio Modal Content
+  const portfolioModal = () => {
+    const portfolioLink = document.querySelectorAll(".portfolio-popup");
+    const portfolioTitle = document.querySelector(".portfolio-title");
+    const portfolioImage = document.querySelector(".portfolio-image");
+    const portfolioContent = document.querySelector(".portfolio-content");
+
+    portfolioLink.forEach((link) => {
+      link.addEventListener("click", (e) => {
+        let porfolioID = Number(e.currentTarget.dataset.id);
+
+        let result = portfolio.find((website) => website.id === porfolioID);
+
+        portfolioTitle.innerHTML = result.name;
+        portfolioImage.innerHTML = `<img src=${result.image} alt=${result.name} class="w-100" />`;
+        portfolioContent.innerHTML = `
+        <div class="top">
+            <p><strong>Category:</strong> ${result.category}</p>
+            <p><strong>Client:</strong> ${result.name}</p>
+            <p><strong>Project date:</strong> 01 March, 2020</p>
+            <p><strong>Project URL:</strong> <a href=${result.url} target="_blank">${result.url}</a></p>
+        </div>
+        `;
+      });
+    });
+  };
+
+  portfolioModal();
 })();
