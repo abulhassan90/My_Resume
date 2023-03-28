@@ -29,12 +29,14 @@
   });
 
   // Portfolio Category Filter Tab
+  let portfolioData = [...portfolio];
+
   const filterContainer = document.querySelector(".categories");
 
   const displayFilter = () => {
     const categories = [
       "all",
-      ...new Set(portfolio?.map((website) => website.category)),
+      ...new Set(portfolioData?.map((website) => website.category)),
     ];
 
     filterContainer.innerHTML = categories
@@ -66,14 +68,20 @@
 
   // Portfolio List
   const portfolioList = document.querySelector("#portfolio-list");
-
   let pagination = 6;
+  let portfolioCopy;
 
-  let portfolioCopy = portfolio.slice(0, pagination);
+  const sliceData = () => {
+    portfolioCopy = portfolioData.slice(0, pagination);
+  };
+  sliceData();
+
   const filterWebsite = (category) => {
-    portfolioCopy = portfolio.filter((website) => website.category == category);
+    portfolioCopy = portfolioData.filter(
+      (website) => website.category == category
+    );
     if (category === "all") {
-      portfolioCopy = portfolio;
+      portfolioCopy = portfolioData;
     }
   };
 
@@ -174,7 +182,9 @@
   const loadAllProjects = document.querySelector("#load-all");
 
   loadAllProjects.addEventListener("click", () => {
-    pagination = undefined;
+    pagination = pagination + 3;
+    sliceData();
     displayPortfolio();
+    portfolioImgHeight();
   });
 })();
