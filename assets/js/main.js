@@ -67,7 +67,9 @@
   // Portfolio List
   const portfolioList = document.querySelector("#portfolio-list");
 
-  let portfolioCopy = portfolio;
+  let pagination = 6;
+
+  let portfolioCopy = portfolio.slice(0, pagination);
   const filterWebsite = (category) => {
     portfolioCopy = portfolio.filter((website) => website.category == category);
     if (category === "all") {
@@ -144,15 +146,35 @@
         portfolioImage.innerHTML = `<img src=${result.image} alt=${result.name} class="w-100" />`;
         portfolioContent.innerHTML = `
         <div class="top">
-            <p><strong>Category:</strong> ${result.category}</p>
+            <p><strong>Category:</strong> ${result.category.toUpperCase()}</p>
+            <p><strong>Platform:</strong> ${result.platform}</p>
             <p><strong>Client:</strong> ${result.name}</p>
-            <p><strong>Project date:</strong> 01 March, 2020</p>
-            <p><strong>Project URL:</strong> <a href=${result.url} target="_blank">${result.url}</a></p>
+            <p><strong>Project date:</strong> ${result.date}</p>
+            <p><strong>Project URL:</strong> <a href=${
+              result.url
+            } target="_blank">${result.url}</a></p>
         </div>
+        ${
+          result.role && result.role.length > 0
+            ? `<div class="bottom">
+          <h4 class="title">My Role</h4>
+          <ul>
+          ${result.role.map((list) => `<li>${list}</li>`).join("")}
+          </ul>
+        </div>`
+            : ""
+        }
         `;
       });
     });
   };
 
   portfolioModal();
+
+  const loadAllProjects = document.querySelector("#load-all");
+
+  loadAllProjects.addEventListener("click", () => {
+    pagination = undefined;
+    displayPortfolio();
+  });
 })();

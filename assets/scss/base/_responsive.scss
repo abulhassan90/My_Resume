@@ -20,6 +20,36 @@
     }
   }
 
+  .section__title {
+    margin-bottom: 1rem;
+  }
+
+  #about {
+    .bio-data {
+      columns: 1;
+    }
+
+    .title {
+      margin-top: 2rem;
+    }
+  }
+
+  #skills {
+    .skill {
+      padding: 0;
+    }
+  }
+
+  #resume {
+    .experience {
+      font-size: 1.2rem;
+      margin-top: 5px;
+    }
+    .content {
+      padding: 0;
+    }
+  }
+
   #portfolio__list {
     .filter {
       .categories {
@@ -31,4 +61,30 @@
 
 @include media-md {
   @include aside-mobile;
+
+  #about {
+    .bio-data {
+      columns: 1;
+    }
+  }
+
+  .section {
+    min-height: auto;
+  }
+
+  #resume {
+    .content {
+      padding: 0;
+    }
+  }
+}
+
+@include media-xl {
+  body {
+    font-size: 20px;
+  }
+
+  .container {
+    max-width: 1600px;
+  }
 }

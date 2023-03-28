@@ -104,6 +104,17 @@
         .portfolio-content {
           p {
             margin-bottom: 10px;
+            text-align: left;
+
+            a {
+              color: $primary-color;
+            }
+          }
+          .bottom {
+            .title {
+              margin-top: 2rem;
+              font-size: 1.4rem;
+            }
           }
         }
       }

@@ -13,6 +13,10 @@ a {
   color: #000000;
 }
 
+p {
+  text-align: justify;
+}
+
 .container {
   padding: 0 1.5rem;
 }
@@ -291,6 +295,9 @@ a {
   font-weight: bold;
   margin-top: 0.2rem;
 }
+#skills .works p {
+  text-align: left;
+}
 
 #resume .experience {
   text-align: right;
@@ -322,6 +329,7 @@ a {
 #resume .content .timeline h4 {
   line-height: 1rem;
   margin-bottom: 1rem;
+  line-height: 1.5rem;
 }
 #resume .content .timeline .period {
   background-color: rgba(20, 157, 221, 0.2);
@@ -339,7 +347,7 @@ a {
   font-size: 1.1rem;
 }
 #resume .content .timeline ul li {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 0.7rem;
 }
 #resume .content .education .timeline h4 {
@@ -430,6 +438,14 @@ a {
 }
 #portfolio #portfolioModal .modal-body .info .portfolio-content p {
   margin-bottom: 10px;
+  text-align: left;
+}
+#portfolio #portfolioModal .modal-body .info .portfolio-content p a {
+  color: #149ddd;
+}
+#portfolio #portfolioModal .modal-body .info .portfolio-content .bottom .title {
+  margin-top: 2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -458,6 +474,26 @@ a {
   #home .content .skill__text div {
     padding: 0;
   }
+  .section__title {
+    margin-bottom: 1rem;
+  }
+  #about .bio-data {
+    -moz-columns: 1;
+         columns: 1;
+  }
+  #about .title {
+    margin-top: 2rem;
+  }
+  #skills .skill {
+    padding: 0;
+  }
+  #resume .experience {
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+  #resume .content {
+    padding: 0;
+  }
   #portfolio__list .filter .categories {
     -moz-column-gap: 1.3rem;
          column-gap: 1.3rem;
@@ -475,5 +511,23 @@ a {
   }
   .main {
     margin-left: 0;
+  }
+  #about .bio-data {
+    -moz-columns: 1;
+         columns: 1;
+  }
+  .section {
+    min-height: auto;
+  }
+  #resume .content {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1600px) {
+  body {
+    font-size: 20px;
+  }
+  .container {
+    max-width: 1600px;
   }
 }/*# sourceMappingURL=main.css.map */
