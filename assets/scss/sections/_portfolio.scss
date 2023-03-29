@@ -52,6 +52,7 @@
             color: #fff;
             font-size: 2rem;
             text-align: center;
+            cursor: pointer;
             @include transition-ease;
 
             &:first-child {
@@ -119,5 +120,10 @@
         }
       }
     }
+  }
+
+  #load-all {
+    width: 270px;
+    margin: 0 auto;
   }
 }

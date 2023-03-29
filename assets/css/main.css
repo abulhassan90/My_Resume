@@ -21,6 +21,19 @@ p {
   padding: 0 1.5rem;
 }
 
+.btn-primary {
+  background-color: #0086c5;
+  border-color: #0086c5;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn:first-child:active {
+  background-color: #149ddd;
+  border-color: #149ddd;
+}
+
 .aside {
   height: 100%;
   width: 280px;
@@ -402,6 +415,7 @@ p {
   color: #fff;
   font-size: 2rem;
   text-align: center;
+  cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
 #portfolio__list .blocks .website .actions .link:first-child {
@@ -446,6 +460,10 @@ p {
 #portfolio #portfolioModal .modal-body .info .portfolio-content .bottom .title {
   margin-top: 2rem;
   font-size: 1.4rem;
+}
+#portfolio #load-all {
+  width: 270px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 767px) {

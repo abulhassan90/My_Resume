@@ -1,6 +1,10 @@
 (() => {
   "use strict";
 
+  /******************
+  # Aside
+  *******************/
+
   let offcanvas = document.querySelector(".offcanvas-collapse");
   let navbarToggle = document.querySelector("#navbarSideCollapse .bi");
 
@@ -28,15 +32,18 @@
     });
   });
 
+  /******************
+  # Portfolio
+  *******************/
+
   // Portfolio Category Filter Tab
-  let portfolioData = [...portfolio];
 
   const filterContainer = document.querySelector(".categories");
 
   const displayFilter = () => {
     const categories = [
       "all",
-      ...new Set(portfolioData?.map((website) => website.category)),
+      ...new Set(portfolio?.map((website) => website.category)),
     ];
 
     filterContainer.innerHTML = categories
@@ -50,60 +57,72 @@
 
   displayFilter();
 
-  let categoryBtns = document.querySelectorAll(".category-btn");
-  categoryBtns?.forEach((categoryBtn) => {
-    categoryBtn.addEventListener("click", (e) => {
-      let current = document
-        .querySelector(".categories")
-        .getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      e.target.classList.add("active");
+  const selectCategory = () => {
+    let categoryBtns = document.querySelectorAll(".category-btn");
+    categoryBtns?.forEach((categoryBtn) => {
+      categoryBtn.addEventListener("click", (e) => {
+        let current = document
+          .querySelector(".categories")
+          .getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        e.target.classList.add("active");
 
-      filterWebsite(e.target.textContent.trim());
-      displayPortfolio();
-      portfolioImgHeight();
-      portfolioModal();
+        filterWebsite(e.target.textContent.trim());
+        displayPortfolio();
+        portfolioImgHeight();
+        portfolioModal();
+      });
     });
-  });
+  };
+
+  selectCategory();
 
   // Portfolio List
+
   const portfolioList = document.querySelector("#portfolio-list");
   let pagination = 6;
   let portfolioCopy;
-
+  let filteredPortfolio;
   const sliceData = () => {
-    portfolioCopy = portfolioData.slice(0, pagination);
+    portfolioCopy = portfolio.slice(0, pagination);
+    filteredPortfolio = portfolioCopy;
   };
   sliceData();
 
   const filterWebsite = (category) => {
-    portfolioCopy = portfolioData.filter(
+    filteredPortfolio = portfolioCopy.filter(
       (website) => website.category == category
     );
     if (category === "all") {
-      portfolioCopy = portfolioData;
+      filteredPortfolio = portfolioCopy;
     }
   };
 
   const displayPortfolio = () => {
-    portfolioList.innerHTML = portfolioCopy
+    portfolioList.innerHTML = filteredPortfolio
       .map((website) => {
-        return `<div class="col-md-4">
+        return `<div class="col-sm-6 col-md-4">
       <div class="website">
         <img
           src=${website.image}
           alt=${website.name}
           class="w-100"
         />
-        <div class="actions" data-bs-toggle="modal"
-        data-bs-target="#portfolioModal">
-          <a class="link portfolio-popup" href="#!" data-id=${website.id} ><i class="bi bi-plus"></i></a>
-          <a
+        <div class="actions">
+          <span class="link portfolio-popup" data-id=${
+            website.id
+          }  data-bs-toggle="modal"
+          data-bs-target="#portfolioModal"><i class="bi bi-plus"></i></span>
+          ${
+            website.url
+              ? `<a
             class="link"
             href=${website.url}
             target="_blank"
             ><i class="bi bi-link-45deg"></i
-          ></a>
+          ></a>`
+              : ""
+          }
         </div>
       </div>
     </div>`;
@@ -133,6 +152,10 @@
     window.addEventListener("load", function () {
       loadImgHeight();
     });
+
+    window.addEventListener("resize", function () {
+      loadImgHeight();
+    });
   };
 
   portfolioImgHeight();
@@ -148,7 +171,7 @@
       link.addEventListener("click", (e) => {
         let porfolioID = Number(e.currentTarget.dataset.id);
 
-        let result = portfolio.find((website) => website.id === porfolioID);
+        let result = portfolioCopy.find((website) => website.id === porfolioID);
 
         portfolioTitle.innerHTML = result.name;
         portfolioImage.innerHTML = `<img src=${result.image} alt=${result.name} class="w-100" />`;
@@ -181,10 +204,13 @@
 
   const loadAllProjects = document.querySelector("#load-all");
 
-  loadAllProjects.addEventListener("click", () => {
-    pagination = pagination + 3;
+  loadAllProjects.addEventListener("click", (e) => {
+    pagination = portfolio.length;
+    displayFilter();
+    selectCategory();
     sliceData();
     displayPortfolio();
     portfolioImgHeight();
+    e.target.style.display = "none";
   });
 })();
