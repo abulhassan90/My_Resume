@@ -1,0 +1,62 @@
+#contact {
+  .content {
+    .address {
+      .icon {
+        .bi {
+          font-size: 1.5rem;
+          color: $secondary-color;
+          background-color: rgba(20, 157, 221, 0.2);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          @include transition-ease;
+        }
+      }
+
+      .details {
+        p {
+          text-align: left;
+          color: #666;
+
+          a {
+            color: #666;
+          }
+        }
+      }
+
+      .info {
+        &:hover {
+          .icon {
+            .bi {
+              color: #fff;
+              background-color: $secondary-color;
+            }
+          }
+        }
+      }
+    }
+
+    .contact-form {
+      .form-input {
+        position: relative;
+
+        .form-control {
+          padding-left: 2.5rem;
+          height: 3rem;
+        }
+
+        .start-icon {
+          position: absolute;
+          top: 10px;
+          left: 20px;
+          color: #cbcbcb;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
