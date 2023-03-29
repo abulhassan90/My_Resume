@@ -181,9 +181,11 @@
             <p><strong>Platform:</strong> ${result.platform}</p>
             <p><strong>Client:</strong> ${result.name}</p>
             <p><strong>Project date:</strong> ${result.date}</p>
-            <p><strong>Project URL:</strong> <a href=${
+            ${
               result.url
-            } target="_blank">${result.url}</a></p>
+                ? `<p><strong>Project URL:</strong> <a href=${result.url} target="_blank">${result.url}</a></p>`
+                : ""
+            }
         </div>
         ${
           result.role && result.role.length > 0
