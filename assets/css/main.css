@@ -34,6 +34,19 @@ p {
   border-color: #149ddd;
 }
 
+.form-control {
+  border-color: #bdbdbd;
+}
+.form-control:focus {
+  border-color: rgba(20, 157, 221, 0.6);
+}
+.form-control::-moz-placeholder {
+  color: #bdbdbd;
+}
+.form-control::placeholder {
+  color: #bdbdbd;
+}
+
 .aside {
   height: 100%;
   width: 280px;
@@ -503,6 +516,11 @@ p {
   left: 20px;
   color: #cbcbcb;
   font-size: 1.2rem;
+}
+#contact .content .contact-form .btn {
+  margin: 0 auto;
+  display: block;
+  width: 170px;
 }
 
 @media screen and (max-width: 767px) {

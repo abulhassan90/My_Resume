@@ -36,3 +36,15 @@ p {
   background-color: $primary-color;
   border-color: $primary-color;
 }
+
+.form-control {
+  border-color: #bdbdbd;
+
+  &:focus {
+    border-color: rgba($primary-color, 0.6);
+  }
+
+  &::placeholder {
+    color: #bdbdbd;
+  }
+}

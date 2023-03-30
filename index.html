@@ -556,7 +556,7 @@
           <div class="content pt-3">
             <div class="row">
               <div class="col-md-5">
-                <div class="address">
+                <div class="address mb-4">
                   <div class="info d-flex gap-3">
                     <div class="icon"><i class="bi bi-geo-alt"></i></div>
                     <div class="details">
@@ -598,7 +598,7 @@
                         placeholder="Your Name"
                         required
                       />
-                      <div class="invalid-feedback">Enter your name</div>
+                      <div class="invalid-feedback">Please enter your name</div>
                       <span class="start-icon"
                         ><i class="bi bi-person"></i
                       ></span>
@@ -607,7 +607,7 @@
                       <input
                         type="tel"
                         class="form-control"
-                        placeholder="Mobile"
+                        placeholder="Mobile (Not Required)"
                       />
                       <span class="start-icon"
                         ><i class="bi bi-telephone"></i
@@ -622,7 +622,7 @@
                         required
                       />
                       <div class="invalid-feedback">
-                        Enter your valid email address
+                        Please enter valid email address
                       </div>
                       <span class="start-icon"
                         ><i class="bi bi-envelope"></i
@@ -636,7 +636,9 @@
                         placeholder="Subject"
                         required
                       />
-                      <div class="invalid-feedback">Enter your subject</div>
+                      <div class="invalid-feedback">
+                        Please enter your subject
+                      </div>
                       <span class="start-icon"
                         ><i class="bi bi-pencil-square"></i
                       ></span>
@@ -647,9 +649,12 @@
                         class="form-control"
                         id="validationTextarea"
                         placeholder="Message"
+                        rows="5"
                         required
                       ></textarea>
-                      <div class="invalid-feedback">Enter your message</div>
+                      <div class="invalid-feedback">
+                        Please enter your message
+                      </div>
                     </div>
 
                     <div class="col-12"></div>
