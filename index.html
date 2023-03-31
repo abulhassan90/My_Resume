@@ -9,6 +9,7 @@
       href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link rel="stylesheet" href="../assets/css/main.css" />
   </head>
   <body>
@@ -589,12 +590,16 @@
 
               <div class="col-md-7">
                 <div class="contact-form">
-                  <form class="row g-3 needs-validation" novalidate>
+                  <form
+                    class="row g-3 needs-validation"
+                    id="contactForm"
+                    novalidate
+                  >
                     <div class="form-input col-md-6">
                       <input
                         type="text"
                         class="form-control"
-                        id="validationName"
+                        id="inputName"
                         placeholder="Your Name"
                         required
                       />
@@ -607,6 +612,7 @@
                       <input
                         type="tel"
                         class="form-control"
+                        id="inputMobile"
                         placeholder="Mobile (Not Required)"
                       />
                       <span class="start-icon"
@@ -617,7 +623,7 @@
                       <input
                         type="email"
                         class="form-control"
-                        id="validationEmail"
+                        id="inputEmail"
                         placeholder="Email"
                         required
                       />
@@ -632,7 +638,7 @@
                       <input
                         type="text"
                         class="form-control"
-                        id="validationSubject"
+                        id="inputSubject"
                         placeholder="Subject"
                         required
                       />
@@ -647,7 +653,7 @@
                     <div class="col-md-12">
                       <textarea
                         class="form-control"
-                        id="validationTextarea"
+                        id="inputMessage"
                         placeholder="Message"
                         rows="5"
                         required
@@ -659,9 +665,18 @@
 
                     <div class="col-12"></div>
                     <div class="col-12">
-                      <button class="btn btn-primary" type="submit">
-                        Submit form
+                      <button
+                        class="btn btn-primary"
+                        type="submit"
+                        id="contactBtn"
+                      >
+                        Submit Message
                       </button>
+                    </div>
+                    <div class="col-12 form-message">
+                      <p class="text-success text-center">
+                        Form is submitted Successfully
+                      </p>
                     </div>
                   </form>
                 </div>

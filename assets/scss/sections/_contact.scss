@@ -64,5 +64,13 @@
         width: 170px;
       }
     }
+
+    .form-message {
+      display: none;
+
+      &.show {
+        display: block;
+      }
+    }
   }
 }
