@@ -50,10 +50,21 @@
     }
   }
 
-  #portfolio__list {
-    .filter {
-      .categories {
-        column-gap: 1.3rem;
+  #portfolio {
+    #portfolio__list {
+      .filter {
+        .categories {
+          column-gap: 1.3rem;
+        }
+      }
+    }
+    #portfolioModal {
+      .modal-header {
+        .btn-group {
+          .text {
+            display: none;
+          }
+        }
       }
     }
   }

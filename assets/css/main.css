@@ -28,8 +28,7 @@ p {
 
 .btn-primary:hover,
 .btn-primary:active,
-.btn-primary:focus,
-.btn:first-child:active {
+.btn-primary:focus {
   background-color: #149ddd;
   border-color: #149ddd;
 }
@@ -451,6 +450,18 @@ p {
   position: absolute;
   transition: all 7s ease;
 }
+#portfolio #portfolioModal .modal-header #portfolioModalLabel {
+  line-height: 1.4rem;
+}
+#portfolio #portfolioModal .modal-header .btn-group {
+  margin-right: 20px;
+}
+#portfolio #portfolioModal .modal-header .btn-group .btn:disabled {
+  opacity: 0.3;
+}
+#portfolio #portfolioModal .modal-body {
+  transition: all 0.4s ease-in-out;
+}
 #portfolio #portfolioModal .modal-body .portfolio-image {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   border: 1px solid #dee2e6;
@@ -575,9 +586,12 @@ p {
   #resume .content {
     padding: 0;
   }
-  #portfolio__list .filter .categories {
+  #portfolio #portfolio__list .filter .categories {
     -moz-column-gap: 1.3rem;
          column-gap: 1.3rem;
+  }
+  #portfolio #portfolioModal .modal-header .btn-group .text {
+    display: none;
   }
 }
 @media screen and (max-width: 991px) {

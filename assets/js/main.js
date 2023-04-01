@@ -89,8 +89,6 @@
   };
   sliceData();
 
-  console.log(portfolioCopy);
-
   const filterWebsite = (category) => {
     filteredPortfolio = portfolioCopy.filter(
       (website) => website.category == category
@@ -102,7 +100,7 @@
 
   const displayPortfolio = () => {
     portfolioList.innerHTML = filteredPortfolio
-      .map((website) => {
+      .map((website, index) => {
         return `<div class="col-sm-6 col-md-4">
       <div class="website">
         <img
@@ -113,7 +111,7 @@
         <div class="actions">
           <span class="link portfolio-popup" data-id=${
             website.id
-          }  data-bs-toggle="modal"
+          } data-index=${index} data-bs-toggle="modal"
           data-bs-target="#portfolioModal"><i class="bi bi-plus"></i></span>
           ${
             website.url
@@ -166,49 +164,98 @@
 
   portfolioImgHeight();
 
+  let porfolioIndex;
+  const btnPrevious = document.getElementById("btn-previous");
+  const btnNext = document.getElementById("btn-next");
+
   // Portfolio Modal Content
   const portfolioModal = () => {
     const portfolioLink = document.querySelectorAll(".portfolio-popup");
-    const portfolioTitle = document.querySelector(".portfolio-title");
-    const portfolioImage = document.querySelector(".portfolio-image");
-    const portfolioContent = document.querySelector(".portfolio-content");
 
     portfolioLink.forEach((link) => {
       link.addEventListener("click", (e) => {
         let porfolioID = Number(e.currentTarget.dataset.id);
+        porfolioIndex = Number(e.currentTarget.dataset.index);
+        if (porfolioIndex === 0) {
+          btnPrevious.setAttribute("disabled", "disabled");
+        } else {
+          btnPrevious.removeAttribute("disabled");
+        }
+
+        if (porfolioIndex === filteredPortfolio.length - 1) {
+          btnNext.setAttribute("disabled", "disabled");
+        } else {
+          btnNext.removeAttribute("disabled");
+        }
 
         let result = portfolioCopy.find((website) => website.id === porfolioID);
 
-        portfolioTitle.innerHTML = result.name;
-        portfolioImage.innerHTML = `<img src=${result.image} alt=${result.name} class="w-100" />`;
-        portfolioContent.innerHTML = `
-        <div class="top">
-            <p><strong>Category:</strong> ${result.category.toUpperCase()}</p>
-            <p><strong>Platform:</strong> ${result.platform}</p>
-            <p><strong>Client:</strong> ${result.name}</p>
-            <p><strong>Project date:</strong> ${result.date}</p>
-            ${
-              result.url
-                ? `<p><strong>Project URL:</strong> <a href=${result.url} target="_blank">${result.url}</a></p>`
-                : ""
-            }
-        </div>
-        ${
-          result.role && result.role.length > 0
-            ? `<div class="bottom">
-          <h4 class="title">My Role</h4>
-          <ul>
-          ${result.role.map((list) => `<li>${list}</li>`).join("")}
-          </ul>
-        </div>`
-            : ""
-        }
-        `;
+        porfolioPopupContent(result);
       });
     });
   };
 
   portfolioModal();
+
+  // Portfolio Slider
+  btnPrevious.addEventListener("click", (e) => {
+    porfolioIndex = porfolioIndex - 1;
+
+    btnNext.removeAttribute("disabled");
+    if (porfolioIndex === 0) {
+      e.currentTarget.setAttribute("disabled", "disabled");
+    }
+
+    let result = filteredPortfolio[porfolioIndex];
+
+    porfolioPopupContent(result);
+  });
+
+  btnNext.addEventListener("click", (e) => {
+    porfolioIndex = porfolioIndex + 1;
+
+    btnPrevious.removeAttribute("disabled");
+    if (porfolioIndex === filteredPortfolio.length - 1) {
+      e.currentTarget.setAttribute("disabled", "disabled");
+    }
+
+    let result = filteredPortfolio[porfolioIndex];
+
+    porfolioPopupContent(result);
+  });
+
+  // Portfolio Popup Content
+
+  const porfolioPopupContent = (result) => {
+    const portfolioTitle = document.querySelector(".portfolio-title");
+    const portfolioImage = document.querySelector(".portfolio-image");
+    const portfolioContent = document.querySelector(".portfolio-content");
+
+    portfolioTitle.innerHTML = result.name;
+    portfolioImage.innerHTML = `<img src=${result.image} alt=${result.name} class="w-100" />`;
+    portfolioContent.innerHTML = `
+    <div class="top">
+        <p><strong>Category:</strong> ${result.category.toUpperCase()}</p>
+        <p><strong>Platform:</strong> ${result.platform}</p>
+        <p><strong>Client:</strong> ${result.name}</p>
+        <p><strong>Project date:</strong> ${result.date}</p>
+        ${
+          result.url
+            ? `<p><strong>Project URL:</strong> <a href=${result.url} target="_blank">${result.url}</a></p>`
+            : ""
+        }
+    </div>
+    ${
+      result.role && result.role.length > 0
+        ? `<div class="bottom">
+      <h4 class="title">My Role</h4>
+      <ul>
+      ${result.role.map((list) => `<li>${list}</li>`).join("")}
+      </ul>
+    </div>`
+        : ""
+    }`;
+  };
 
   const loadAllProjects = document.querySelector("#load-all");
 
