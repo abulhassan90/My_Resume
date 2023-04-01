@@ -80,7 +80,7 @@
   // Portfolio List
 
   const portfolioList = document.querySelector("#portfolio-list");
-  let pagination = 6;
+  let pagination = 9;
   let portfolioCopy;
   let filteredPortfolio;
   const sliceData = () => {
@@ -88,6 +88,8 @@
     filteredPortfolio = portfolioCopy;
   };
   sliceData();
+
+  console.log(portfolioCopy);
 
   const filterWebsite = (category) => {
     filteredPortfolio = portfolioCopy.filter(
@@ -156,6 +158,10 @@
     window.addEventListener("resize", function () {
       loadImgHeight();
     });
+
+    window.addEventListener("mousemove", function () {
+      loadImgHeight();
+    });
   };
 
   portfolioImgHeight();
@@ -212,7 +218,8 @@
     selectCategory();
     sliceData();
     displayPortfolio();
-    portfolioImgHeight();
+    setTimeout(portfolioImgHeight, 100);
+    portfolioModal();
     e.target.style.display = "none";
   });
 })();
