@@ -9,6 +9,7 @@
       href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link rel="stylesheet" href="../assets/css/main.css" />
   </head>
@@ -142,6 +143,7 @@
                 src="../assets/img/profile-large.png"
                 class="w-100"
                 alt="Abul Hassan"
+                data-aos="fade-up"
               />
             </div>
             <div class="col-md-8">
@@ -711,9 +713,16 @@
       </section>
     </main>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="../assets/js/data.js"></script>
     <script src="../assets/js/form-validation.js"></script>
     <script src="../assets/js/main.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
   </body>
 </html>

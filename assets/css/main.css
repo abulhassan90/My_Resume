@@ -459,9 +459,6 @@ p {
 #portfolio #portfolioModal .modal-header .btn-group .btn:disabled {
   opacity: 0.3;
 }
-#portfolio #portfolioModal .modal-body {
-  transition: all 0.4s ease-in-out;
-}
 #portfolio #portfolioModal .modal-body .portfolio-image {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   border: 1px solid #dee2e6;
@@ -592,6 +589,9 @@ p {
   }
   #portfolio #portfolioModal .modal-header .btn-group .text {
     display: none;
+  }
+  #portfolio #portfolioModal .modal-body .info .title {
+    margin-top: 2rem;
   }
 }
 @media screen and (max-width: 991px) {
