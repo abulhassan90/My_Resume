@@ -289,6 +289,8 @@ p {
 #skills .skill {
   margin-bottom: 1.3rem;
   padding: 0 1rem;
+  width: 50%;
+  flex-shrink: 0;
 }
 #skills .skill h5 {
   position: relative;
@@ -575,6 +577,7 @@ p {
   }
   #skills .skill {
     padding: 0;
+    width: 100%;
   }
   #resume .experience {
     font-size: 1.2rem;

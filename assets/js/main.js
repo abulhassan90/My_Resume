@@ -33,6 +33,82 @@
   });
 
   /******************
+  # Skills
+  *******************/
+
+  // Skills Elements
+
+  const skillsElement = document.querySelector("#skills-progress");
+
+  skillsElement.innerHTML = skills
+    .map((skill) => {
+      return `<div class="skill ${skill.alias}">
+                <h5>${skill.title} <span class="percent">${skill.percent}%</span></h5>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Example with label"
+                  aria-valuenow="${skill.percent}"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div
+                    class="progress-bar progress-bar-striped bg-${skill.color}"
+                    style="width: ${skill.percent}%"
+                  ></div>
+                </div>
+              </div>`;
+    })
+    .join("");
+
+  // Skills Levels
+  // const skillLevels = document.querySelectorAll(".progress-bar");
+
+  // skillLevels.forEach((skill) => {
+  //   updateSkill(skill);
+  // });
+
+  // function updateSkill(el) {
+  //   const dataCount = parseInt(el.getAttribute("data-count"));
+  //   let projectValue = parseInt(el.innerHTML);
+
+  //   // let increment = Math.ceil(dataCount / 10);
+
+  //   const countNum = setInterval(() => {
+  //     projectValue++;
+  //     el.innerHTML = projectValue;
+
+  //     if (projectValue >= dataCount) {
+  //       clearInterval(countNum);
+  //     }
+  //   }, 60);
+  // }
+
+  // Skills Projects
+
+  const projectsCount = document.querySelectorAll(".projects-count");
+
+  projectsCount.forEach((projects) => {
+    updateCount(projects);
+  });
+
+  function updateCount(el) {
+    const dataCount = parseInt(el.getAttribute("data-count"));
+    let projectValue = parseInt(el.innerHTML);
+
+    // let increment = Math.ceil(dataCount / 10);
+
+    const countNum = setInterval(() => {
+      projectValue++;
+      el.innerHTML = projectValue;
+
+      if (projectValue >= dataCount) {
+        clearInterval(countNum);
+      }
+    }, 60);
+  }
+
+  /******************
   # Portfolio
   *******************/
 

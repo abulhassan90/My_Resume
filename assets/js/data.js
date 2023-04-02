@@ -1,3 +1,62 @@
+const skills = [
+  {
+    id: 1,
+    title: "HTML, CSS, SASS",
+    alias: "html",
+    percent: 100,
+    color: "default",
+  },
+  {
+    id: 2,
+    title: "Git, Github",
+    alias: "git",
+    percent: 90,
+    color: "info",
+  },
+  {
+    id: 3,
+    title: "Bootstrap, Material UI",
+    alias: "bootstrap",
+    percent: 100,
+    color: "success",
+  },
+  {
+    id: 4,
+    title: "Joomla, Wordpress, Opencart",
+    alias: "cms",
+    percent: 85,
+    color: "warning",
+  },
+  {
+    id: 5,
+    title: "Javascript, React Js",
+    alias: "javascript",
+    percent: 80,
+    color: "dark",
+  },
+  {
+    id: 6,
+    title: "Photoshop",
+    alias: "photoshop",
+    percent: 50,
+    color: "danger",
+  },
+  {
+    id: 7,
+    title: "Testing / Debugging",
+    alias: "testing",
+    percent: 90,
+    color: "info",
+  },
+  {
+    id: 8,
+    title: "Video Editing",
+    alias: "video",
+    percent: 80,
+    color: "secondary",
+  },
+];
+
 const portfolio = [
   {
     id: 1,
