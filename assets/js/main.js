@@ -48,13 +48,12 @@
                   class="progress"
                   role="progressbar"
                   aria-label="Example with label"
-                  aria-valuenow="${skill.percent}"
+                  aria-valuenow=${skill.percent}"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 >
                   <div
                     class="progress-bar progress-bar-striped bg-${skill.color}"
-                    style="width: ${skill.percent}%"
                   ></div>
                 </div>
               </div>`;
@@ -62,27 +61,31 @@
     .join("");
 
   // Skills Levels
-  // const skillLevels = document.querySelectorAll(".progress-bar");
+  const skillProgress = document.querySelectorAll(".progress");
 
-  // skillLevels.forEach((skill) => {
-  //   updateSkill(skill);
-  // });
+  window.addEventListener("scroll", () => {
+    skillProgress.forEach((skill) => {
+      updateSkill(skill);
+    });
+  });
 
-  // function updateSkill(el) {
-  //   const dataCount = parseInt(el.getAttribute("data-count"));
-  //   let projectValue = parseInt(el.innerHTML);
+  function updateSkill(el) {
+    const valueNow = parseInt(el.getAttribute("aria-valuenow"));
+    let valueMin = parseInt(el.getAttribute("aria-valuemin"));
 
-  //   // let increment = Math.ceil(dataCount / 10);
+    // let increment = Math.ceil(dataCount / 10);
 
-  //   const countNum = setInterval(() => {
-  //     projectValue++;
-  //     el.innerHTML = projectValue;
+    valueMin = valueNow / 2;
 
-  //     if (projectValue >= dataCount) {
-  //       clearInterval(countNum);
-  //     }
-  //   }, 60);
-  // }
+    const countSkill = setInterval(() => {
+      valueMin += 1;
+      el.firstElementChild.style.width = valueMin + "%";
+
+      if (valueMin >= valueNow) {
+        clearInterval(countSkill);
+      }
+    }, 10);
+  }
 
   // Skills Projects
 
@@ -95,8 +98,6 @@
   function updateCount(el) {
     const dataCount = parseInt(el.getAttribute("data-count"));
     let projectValue = parseInt(el.innerHTML);
-
-    // let increment = Math.ceil(dataCount / 10);
 
     const countNum = setInterval(() => {
       projectValue++;
