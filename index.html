@@ -9,7 +9,7 @@
       href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link rel="stylesheet" href="../assets/css/main.css" />
   </head>
@@ -104,7 +104,14 @@
       </button>
     </nav>
 
-    <main class="main">
+    <main
+      class="main scrollspy-example"
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example2"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      tabindex="0"
+    >
       <!-- Intro -->
       <section id="home">
         <div class="content">
@@ -143,7 +150,7 @@
                 src="../assets/img/profile-large.png"
                 class="w-100"
                 alt="Abul Hassan"
-                data-aos="fade-up"
+                data-aos="fade-right"
               />
             </div>
             <div class="col-md-8">
@@ -164,7 +171,7 @@
                 </li>
                 <li>
                   <i class="bi bi-chevron-right"></i
-                  ><span class="label">Website:</span> www.myresume.com
+                  ><span class="label">Website:</span> www.hassanwebdeveloper.in
                 </li>
                 <li>
                   <i class="bi bi-chevron-right"></i
@@ -208,7 +215,7 @@
           <div class="content pt-3 d-flex flex-wrap" id="skills-progress"></div>
 
           <div class="row works">
-            <div class="col-md-3 col-sm-6 work">
+            <div class="col-md-3 col-sm-6 work" data-aos="fade-up">
               <div class="row">
                 <div class="col-3 pe-0">
                   <i class="bi bi-gear-wide-connected"></i>
@@ -222,7 +229,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6 work">
+            <div
+              class="col-md-3 col-sm-6 work"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <div class="row">
                 <div class="col-3 pe-0">
                   <i class="bi bi-gear"></i>
@@ -236,7 +247,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6 work">
+            <div
+              class="col-md-3 col-sm-6 work"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <div class="row">
                 <div class="col-3 pe-0">
                   <i class="bi bi-cart"></i>
@@ -248,7 +263,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6 work">
+            <div
+              class="col-md-3 col-sm-6 work"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
               <div class="row">
                 <div class="col-3 pe-0">
                   <i class="bi bi-filetype-html"></i>
@@ -269,7 +288,9 @@
         <div class="container">
           <h2 class="section__title">
             Resume <span class="section__title__underline"></span>
-            <span class="experience">9 years of experience</span>
+            <span class="experience" data-aos="zoom-in-down"
+              >9 years of experience</span
+            >
           </h2>
           <p>
             Developed and maintained various websites and web applications using
@@ -450,7 +471,7 @@
           <div class="content pt-3">
             <div class="row">
               <div class="col-md-5">
-                <div class="address mb-4">
+                <div class="address mb-4" data-aos="zoom-in-right">
                   <div class="info d-flex gap-3">
                     <div class="icon"><i class="bi bi-geo-alt"></i></div>
                     <div class="details">
@@ -580,7 +601,7 @@
       </section>
     </main>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/vendor/aos//aos.js"></script>
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="../assets/js/data.js"></script>
     <script src="../assets/js/form-validation.js"></script>
@@ -588,6 +609,7 @@
 
     <script>
       AOS.init({
+        duration: 1000,
         once: true,
       });
     </script>

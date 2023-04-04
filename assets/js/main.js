@@ -36,7 +36,7 @@
   # Skills
   *******************/
 
-  // Skills Elements
+  // Skills Level
 
   const skillsElement = document.querySelector("#skills-progress");
 
@@ -54,38 +54,11 @@
                 >
                   <div
                     class="progress-bar progress-bar-striped bg-${skill.color}"
-                  ></div>
+                    data-aos="slide-right" style="width: ${skill.percent}%;"></div>
                 </div>
               </div>`;
     })
     .join("");
-
-  // Skills Levels
-  const skillProgress = document.querySelectorAll(".progress");
-
-  window.addEventListener("scroll", () => {
-    skillProgress.forEach((skill) => {
-      updateSkill(skill);
-    });
-  });
-
-  function updateSkill(el) {
-    const valueNow = parseInt(el.getAttribute("aria-valuenow"));
-    let valueMin = parseInt(el.getAttribute("aria-valuemin"));
-
-    // let increment = Math.ceil(dataCount / 10);
-
-    valueMin = valueNow / 2;
-
-    const countSkill = setInterval(() => {
-      valueMin += 1;
-      el.firstElementChild.style.width = valueMin + "%";
-
-      if (valueMin >= valueNow) {
-        clearInterval(countSkill);
-      }
-    }, 10);
-  }
 
   // Skills Projects
 
@@ -178,7 +151,8 @@
   const displayPortfolio = () => {
     portfolioList.innerHTML = filteredPortfolio
       .map((website, index) => {
-        return `<div class="col-sm-6 col-md-4">
+        return `<div class="col-sm-6 col-md-4" data-aos="zoom-in-up"
+        data-aos-delay="10">
       <div class="website">
         <img
           src=${website.image}
