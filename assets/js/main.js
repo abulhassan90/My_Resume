@@ -248,6 +248,9 @@
 
   portfolioModal();
 
+  const portfolioLoader = document.getElementById("portfolio-loader");
+  const portfolioDetails = document.getElementById("portfolio-details");
+
   // Portfolio Slider
   btnPrevious.addEventListener("click", (e) => {
     porfolioIndex = porfolioIndex - 1;
@@ -259,7 +262,7 @@
 
     let result = filteredPortfolio[porfolioIndex];
 
-    porfolioPopupContent(result);
+    porfolioLoader(result);
   });
 
   btnNext.addEventListener("click", (e) => {
@@ -272,8 +275,21 @@
 
     let result = filteredPortfolio[porfolioIndex];
 
-    porfolioPopupContent(result);
+    porfolioLoader(result);
   });
+
+  // Portfolio Loader
+
+  const porfolioLoader = (result) => {
+    portfolioLoader.classList.add("show");
+    portfolioDetails.classList.add("hide");
+
+    setTimeout(() => {
+      portfolioLoader.classList.remove("show");
+      portfolioDetails.classList.remove("hide");
+      porfolioPopupContent(result);
+    }, 300);
+  };
 
   // Portfolio Popup Content
 

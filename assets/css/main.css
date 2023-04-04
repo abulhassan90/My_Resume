@@ -484,6 +484,18 @@ p {
   margin-top: 2rem;
   font-size: 1.4rem;
 }
+#portfolio #portfolioModal .modal-body #portfolio-loader {
+  display: none;
+}
+#portfolio #portfolioModal .modal-body #portfolio-loader.show {
+  display: block;
+}
+#portfolio #portfolioModal .modal-body #portfolio-loader .loader {
+  height: 70vh;
+}
+#portfolio #portfolioModal .modal-body #portfolio-details.hide {
+  display: none;
+}
 #portfolio #load-all {
   width: 270px;
   margin: 0 auto;

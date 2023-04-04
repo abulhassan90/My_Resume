@@ -131,6 +131,23 @@
           }
         }
       }
+      #portfolio-loader {
+        display: none;
+
+        &.show {
+          display: block;
+        }
+
+        .loader {
+          height: 70vh;
+        }
+      }
+
+      #portfolio-details {
+        &.hide {
+          display: none;
+        }
+      }
     }
   }
 
