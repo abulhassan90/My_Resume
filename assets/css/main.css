@@ -257,6 +257,7 @@ p {
 #home .content .go-portfolio a {
   color: #fff;
   font-weight: 100;
+  letter-spacing: 1px;
 }
 #home .content .go-portfolio .scroll-down-link {
   position: absolute;
