@@ -456,7 +456,7 @@ const portfolio = [
     category: "ecommerce",
     platform: "Opencart, HTML, CSS",
     role: "",
-    date: "January, 2013",
+    date: "January, 2022",
   },
   {
     id: 33,
@@ -466,7 +466,7 @@ const portfolio = [
     category: "ecommerce",
     platform: "Opencart, HTML, CSS",
     role: "",
-    date: "",
+    date: "August, 2016",
   },
   {
     id: 34,
@@ -476,7 +476,7 @@ const portfolio = [
     category: "ecommerce",
     platform: "Opencart, HTML, CSS",
     role: "",
-    date: "",
+    date: "August, 2020",
   },
   {
     id: 35,
@@ -486,7 +486,7 @@ const portfolio = [
     category: "ecommerce",
     platform: "Opencart, HTML, CSS",
     role: "",
-    date: "",
+    date: "March, 2015",
   },
   {
     id: 36,
@@ -496,7 +496,7 @@ const portfolio = [
     category: "cms",
     platform: "Joomla, HTML, CSS",
     role: "",
-    date: "",
+    date: "January, 2013",
   },
   {
     id: 37,
