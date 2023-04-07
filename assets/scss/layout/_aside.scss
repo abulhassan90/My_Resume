@@ -25,6 +25,11 @@
   }
 
   .nav {
+    &.nav-pills {
+      justify-content: space-around;
+      display: flex;
+      flex: 1;
+    }
     li {
       font-size: 1rem;
       margin: 0.2rem 0;
@@ -32,8 +37,10 @@
 
       .nav-link {
         opacity: 0.6;
-        @include transition-ease;
+        padding-top: 0;
+        padding-bottom: 0;
         background: transparent;
+        @include transition-ease;
       }
 
       &:hover {
