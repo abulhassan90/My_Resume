@@ -303,7 +303,7 @@
     portfolioContent.innerHTML = `
     <div class="top">
         <p><strong>Category:</strong> ${result.category.toUpperCase()}</p>
-        <p><strong>Tools:</strong> ${result.platform}</p>
+        <p><strong>Technologies:</strong> ${result.platform}</p>
         <p><strong>Client:</strong> ${result.name}</p>
         <p><strong>Project date:</strong> ${result.date}</p>
         ${

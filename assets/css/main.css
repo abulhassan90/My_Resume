@@ -67,6 +67,11 @@ p {
   opacity: 0.8;
   letter-spacing: 0.4px;
 }
+.aside .nav.nav-pills {
+  justify-content: space-around;
+  display: flex;
+  flex: 1;
+}
 .aside .nav li {
   font-size: 1rem;
   margin: 0.2rem 0;
@@ -74,8 +79,10 @@ p {
 }
 .aside .nav li .nav-link {
   opacity: 0.6;
-  transition: all 0.4s ease-in-out;
+  padding-top: 0;
+  padding-bottom: 0;
   background: transparent;
+  transition: all 0.4s ease-in-out;
 }
 .aside .nav li:hover {
   font-size: 1.1rem;
