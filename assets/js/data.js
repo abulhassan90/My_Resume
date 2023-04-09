@@ -61,7 +61,7 @@ const portfolio = [
   {
     id: 1,
     name: "Zudioz - Old Company Site",
-    image: "../assets/img/portfolio/cms/zudioz.jpg",
+    image: "assets/img/portfolio/cms/zudioz.jpg",
     url: "http://www.zudioz.com/",
     category: "cms",
     platform: "Joomla, HTML, CSS, Javascript",
@@ -80,7 +80,7 @@ const portfolio = [
   {
     id: 2,
     name: "Marliaads Adsfilm",
-    image: "../assets/img/portfolio/cms/marliaads.jpg",
+    image: "assets/img/portfolio/cms/marliaads.jpg",
     url: "http://www.marliaads.com/",
     category: "cms",
     platform: "Joomla, HTML, CSS, Javascript",
@@ -99,7 +99,7 @@ const portfolio = [
   {
     id: 3,
     name: "Richway Garden",
-    image: "../assets/img/portfolio/cms/richway-garden.jpg",
+    image: "assets/img/portfolio/cms/richway-garden.jpg",
     url: "http://richwaygarden.in/",
     category: "cms",
     platform: "Joomla, HTML, CSS, Javascript",
@@ -119,7 +119,7 @@ const portfolio = [
   {
     id: 4,
     name: "Wajaramedia",
-    image: "../assets/img/portfolio/cms/wajaramedia.jpg",
+    image: "assets/img/portfolio/cms/wajaramedia.jpg",
     url: "http://wajaramedia.com/",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -138,7 +138,7 @@ const portfolio = [
   {
     id: 5,
     name: "Dingdong Grocery",
-    image: "../assets/img/portfolio/ecommerce/ding-dong-grocery.jpg",
+    image: "assets/img/portfolio/ecommerce/ding-dong-grocery.jpg",
     url: "https://www.dingdonggrocery.com/",
     category: "ecommerce",
     platform: "Opencart, HTML, CSS, Javascript",
@@ -157,7 +157,7 @@ const portfolio = [
   {
     id: 6,
     name: "Salamath Books",
-    image: "../assets/img/portfolio/ecommerce/salamathbooks.jpg",
+    image: "assets/img/portfolio/ecommerce/salamathbooks.jpg",
     url: "https://salamathbooks.com/",
     category: "ecommerce",
     platform: "Opencart, HTML, CSS, Javascript",
@@ -176,7 +176,7 @@ const portfolio = [
   {
     id: 7,
     name: "Sequra",
-    image: "../assets/img/portfolio/static/auxus-sequra.jpg",
+    image: "assets/img/portfolio/static/auxus-sequra.jpg",
     url: "https://iberry.asia/sequra/",
     category: "static",
     platform: "HTML, CSS, Javascript",
@@ -193,7 +193,7 @@ const portfolio = [
   {
     id: 8,
     name: "Cazura",
-    image: "../assets/img/portfolio/cms/cazura.jpg",
+    image: "assets/img/portfolio/cms/cazura.jpg",
     url: "http://www.cazura.com/",
     category: "cms",
     platform: "Joomla, HTML, CSS, Javascript",
@@ -210,7 +210,7 @@ const portfolio = [
   {
     id: 9,
     name: "RMS Infra",
-    image: "../assets/img/portfolio/cms/rms-infra.jpg",
+    image: "assets/img/portfolio/cms/rms-infra.jpg",
     url: "http://www.rmsinfra.in/",
     category: "cms",
     platform: "Joomla, HTML, CSS, Javascript",
@@ -230,7 +230,7 @@ const portfolio = [
   {
     id: 10,
     name: "Euro Car Zone",
-    image: "../assets/img/portfolio/cms/eurocarzone.jpg",
+    image: "assets/img/portfolio/cms/eurocarzone.jpg",
     url: "https://eurocarzone.in/",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -240,7 +240,7 @@ const portfolio = [
   {
     id: 11,
     name: "Auxus Stunner",
-    image: "../assets/img/portfolio/static/auxus-stunner.jpg",
+    image: "assets/img/portfolio/static/auxus-stunner.jpg",
     url: "https://iberry.asia/auxus_stunner/",
     category: "static",
     platform: "HTML, CSS",
@@ -250,7 +250,7 @@ const portfolio = [
   {
     id: 12,
     name: "Akon Groups",
-    image: "../assets/img/portfolio/cms/akongroup.jpg",
+    image: "assets/img/portfolio/cms/akongroup.jpg",
     url: "http://www.akongroups.com/",
     category: "cms",
     platform: "Joomls, HTML, CSS",
@@ -260,7 +260,7 @@ const portfolio = [
   {
     id: 13,
     name: "Chennai Cancercare",
-    image: "../assets/img/portfolio/cms/chennai-cancer-care.jpg",
+    image: "assets/img/portfolio/cms/chennai-cancer-care.jpg",
     url: "http://www.chennaicancercare.com/",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -270,7 +270,7 @@ const portfolio = [
   {
     id: 14,
     name: "Deejos",
-    image: "../assets/img/portfolio/cms/deejos.jpg",
+    image: "assets/img/portfolio/cms/deejos.jpg",
     url: "https://www.deejos.co.in/",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -280,7 +280,7 @@ const portfolio = [
   {
     id: 15,
     name: "Stationery Dubai",
-    image: "../assets/img/portfolio/ecommerce/stationery-dubai.jpg",
+    image: "assets/img/portfolio/ecommerce/stationery-dubai.jpg",
     url: "https://stationery-dubai.com/",
     category: "ecommerce",
     platform: "Opencart, HTML, CSS, Javascript",
@@ -290,7 +290,7 @@ const portfolio = [
   {
     id: 16,
     name: "Rihams Boutique",
-    image: "../assets/img/portfolio/ecommerce/rihams.jpg",
+    image: "assets/img/portfolio/ecommerce/rihams.jpg",
     url: "",
     category: "ecommerce",
     platform: "Opencart, HTML, CSS",
@@ -300,7 +300,7 @@ const portfolio = [
   {
     id: 17,
     name: "Dodindia",
-    image: "../assets/img/portfolio/ecommerce/dodindia.jpg",
+    image: "assets/img/portfolio/ecommerce/dodindia.jpg",
     url: "",
     category: "ecommerce",
     platform: "Opencart, HTML, CSS",
@@ -310,7 +310,7 @@ const portfolio = [
   {
     id: 18,
     name: "York Region",
-    image: "../assets/img/portfolio/static/york_region.jpg",
+    image: "assets/img/portfolio/static/york_region.jpg",
     url: "http://www.yorkregiontrophy.com/index.php",
     category: "static",
     platform: "HTML, CSS, Javascript",
@@ -320,7 +320,7 @@ const portfolio = [
   {
     id: 19,
     name: "Seeman Textiles",
-    image: "../assets/img/portfolio/cms/seeman.jpg",
+    image: "assets/img/portfolio/cms/seeman.jpg",
     url: "http://www.seemantex.in/",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -330,7 +330,7 @@ const portfolio = [
   {
     id: 20,
     name: "Blu Marine Ship",
-    image: "../assets/img/portfolio/cms/blu_marine.jpg",
+    image: "assets/img/portfolio/cms/blu_marine.jpg",
     url: "http://www.blumarineshipsupplies.com/",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -340,7 +340,7 @@ const portfolio = [
   {
     id: 21,
     name: "Claps Beverages",
-    image: "../assets/img/portfolio/cms/claps-beverages.jpg",
+    image: "assets/img/portfolio/cms/claps-beverages.jpg",
     url: "http://clapsbeverages.in/",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -350,7 +350,7 @@ const portfolio = [
   {
     id: 22,
     name: "Frisco Masjid",
-    image: "../assets/img/portfolio/cms/islamic-center-of-frisco.jpg",
+    image: "assets/img/portfolio/cms/islamic-center-of-frisco.jpg",
     url: "https://friscomasjid.org/",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -360,7 +360,7 @@ const portfolio = [
   {
     id: 23,
     name: "Onlinepj",
-    image: "../assets/img/portfolio/cms/online-pj.jpg",
+    image: "assets/img/portfolio/cms/online-pj.jpg",
     url: "https://onlinepj.in/",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -370,7 +370,7 @@ const portfolio = [
   {
     id: 24,
     name: "JR Metaux",
-    image: "../assets/img/portfolio/cms/jr_metals.jpg",
+    image: "assets/img/portfolio/cms/jr_metals.jpg",
     url: "http://www.jrmetaux.com/",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -380,7 +380,7 @@ const portfolio = [
   {
     id: 25,
     name: "Muslim Women Aid Society",
-    image: "../assets/img/portfolio/cms/femwas.jpg",
+    image: "assets/img/portfolio/cms/femwas.jpg",
     url: "http://www.femwastn.org/",
     category: "cms",
     platform: "Wordpress, HTML, CSS",
@@ -390,7 +390,7 @@ const portfolio = [
   {
     id: 26,
     name: "Moulana Haj Service",
-    image: "../assets/img/portfolio/cms/moulana_haj_services.jpg",
+    image: "assets/img/portfolio/cms/moulana_haj_services.jpg",
     url: "http://www.moulanahajservice.com/",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -400,7 +400,7 @@ const portfolio = [
   {
     id: 27,
     name: "Visvesvaraya Technological University",
-    image: "../assets/img/portfolio/cms/visvesvaraya-technology-university.jpg",
+    image: "assets/img/portfolio/cms/visvesvaraya-technology-university.jpg",
     url: "https://vtu.ac.in/",
     category: "cms",
     platform: "Wordpress, HTML, CSS",
@@ -410,7 +410,7 @@ const portfolio = [
   {
     id: 28,
     name: "Madhanam Inn",
-    image: "../assets/img/portfolio/cms/madhanaminn-2.jpg",
+    image: "assets/img/portfolio/cms/madhanaminn-2.jpg",
     url: "http://www.madhanam.in/",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -420,7 +420,7 @@ const portfolio = [
   {
     id: 29,
     name: "Dawn Consultant",
-    image: "../assets/img/portfolio/cms/dawn-consultant.jpg",
+    image: "assets/img/portfolio/cms/dawn-consultant.jpg",
     url: "http://dawncon.com/",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -430,8 +430,7 @@ const portfolio = [
   {
     id: 30,
     name: "United Boston Christian Confederation",
-    image:
-      "../assets/img/portfolio/cms/united-boston-christian-confederation.jpg",
+    image: "assets/img/portfolio/cms/united-boston-christian-confederation.jpg",
     url: "http://ubccorg.com/",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -441,7 +440,7 @@ const portfolio = [
   {
     id: 31,
     name: "Aroi TNPY",
-    image: "../assets/img/portfolio/cms/aroi.jpg",
+    image: "assets/img/portfolio/cms/aroi.jpg",
     url: "https://www.aroitnpy.org/",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -451,7 +450,7 @@ const portfolio = [
   {
     id: 32,
     name: "Yuti Designer Blouse",
-    image: "../assets/img/portfolio/ecommerce/yuti-designer-blouse.jpg",
+    image: "assets/img/portfolio/ecommerce/yuti-designer-blouse.jpg",
     url: "https://www.yutidesignerblouse.com/",
     category: "ecommerce",
     platform: "Opencart, HTML, CSS",
@@ -461,7 +460,7 @@ const portfolio = [
   {
     id: 33,
     name: "Prince Print",
-    image: "../assets/img/portfolio/ecommerce/prince-print.jpg",
+    image: "assets/img/portfolio/ecommerce/prince-print.jpg",
     url: "",
     category: "ecommerce",
     platform: "Opencart, HTML, CSS",
@@ -471,7 +470,7 @@ const portfolio = [
   {
     id: 34,
     name: "Pepper Tree",
-    image: "../assets/img/portfolio/ecommerce/pepper-tree.jpg",
+    image: "assets/img/portfolio/ecommerce/pepper-tree.jpg",
     url: "",
     category: "ecommerce",
     platform: "Opencart, HTML, CSS",
@@ -481,7 +480,7 @@ const portfolio = [
   {
     id: 35,
     name: "Coconut Hill",
-    image: "../assets/img/portfolio/ecommerce/coconut-hill.jpg",
+    image: "assets/img/portfolio/ecommerce/coconut-hill.jpg",
     url: "",
     category: "ecommerce",
     platform: "Opencart, HTML, CSS",
@@ -491,7 +490,7 @@ const portfolio = [
   {
     id: 36,
     name: "Pickurs",
-    image: "../assets/img/portfolio/ecommerce/pickurs.jpg",
+    image: "assets/img/portfolio/ecommerce/pickurs.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -501,7 +500,7 @@ const portfolio = [
   {
     id: 37,
     name: "Garden Chudidhaar Park",
-    image: "../assets/img/portfolio/ecommerce/garden-chudidhaar-park.jpg",
+    image: "assets/img/portfolio/ecommerce/garden-chudidhaar-park.jpg",
     url: "",
     category: "ecommerce",
     platform: "Magento, HTML, CSS",
@@ -511,7 +510,7 @@ const portfolio = [
   {
     id: 38,
     name: "KCP Fashion",
-    image: "../assets/img/portfolio/ecommerce/ksp-fashion.jpg",
+    image: "assets/img/portfolio/ecommerce/ksp-fashion.jpg",
     url: "",
     category: "ecommerce",
     platform: "Magento, HTML, CSS",
@@ -521,7 +520,7 @@ const portfolio = [
   {
     id: 39,
     name: "Ayurvedic USA",
-    image: "../assets/img/portfolio/ecommerce/ayurvedic-usa.jpg",
+    image: "assets/img/portfolio/ecommerce/ayurvedic-usa.jpg",
     url: "",
     category: "ecommerce",
     platform: "Magento, HTML, CSS",
@@ -531,7 +530,7 @@ const portfolio = [
   {
     id: 40,
     name: "Rafa Health",
-    image: "../assets/img/portfolio/ecommerce/rafa-health.jpg",
+    image: "assets/img/portfolio/ecommerce/rafa-health.jpg",
     url: "",
     category: "ecommerce",
     platform: "Magento, HTML, CSS",
@@ -541,7 +540,7 @@ const portfolio = [
   {
     id: 41,
     name: "Thambi Shopping",
-    image: "../assets/img/portfolio/ecommerce/thambi-shopping.jpg",
+    image: "assets/img/portfolio/ecommerce/thambi-shopping.jpg",
     url: "",
     category: "ecommerce",
     platform: "Magento, HTML, CSS",
@@ -551,7 +550,7 @@ const portfolio = [
   {
     id: 42,
     name: "MSK Footwear",
-    image: "../assets/img/portfolio/ecommerce/msk-footwear.jpg",
+    image: "assets/img/portfolio/ecommerce/msk-footwear.jpg",
     url: "",
     category: "ecommerce",
     platform: "Opencart, HTML, CSS",
@@ -561,7 +560,7 @@ const portfolio = [
   {
     id: 43,
     name: "Cables and Techs",
-    image: "../assets/img/portfolio/ecommerce/cables-and-techs.jpg",
+    image: "assets/img/portfolio/ecommerce/cables-and-techs.jpg",
     url: "",
     category: "ecommerce",
     platform: "Magento, HTML, CSS",
@@ -571,7 +570,7 @@ const portfolio = [
   {
     id: 44,
     name: "E-Smart",
-    image: "../assets/img/portfolio/ecommerce/esmart.jpg",
+    image: "assets/img/portfolio/ecommerce/esmart.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -581,7 +580,7 @@ const portfolio = [
   {
     id: 45,
     name: "Ethic Case",
-    image: "../assets/img/portfolio/ecommerce/ethnicase.jpg",
+    image: "assets/img/portfolio/ecommerce/ethnicase.jpg",
     url: "",
     category: "ecommerce",
     platform: "Prestashop, HTML, CSS",
@@ -591,7 +590,7 @@ const portfolio = [
   {
     id: 46,
     name: "Get Your Prints",
-    image: "../assets/img/portfolio/ecommerce/getyourprints.jpg",
+    image: "assets/img/portfolio/ecommerce/getyourprints.jpg",
     url: "",
     category: "ecommerce",
     platform: "Magento, HTML, CSS",
@@ -601,7 +600,7 @@ const portfolio = [
   {
     id: 47,
     name: "shans-dress",
-    image: "../assets/img/portfolio/ecommerce/shans-dress.jpg",
+    image: "assets/img/portfolio/ecommerce/shans-dress.jpg",
     url: "",
     category: "ecommerce",
     platform: "Magento, HTML, CSS",
@@ -611,7 +610,7 @@ const portfolio = [
   {
     id: 48,
     name: "Rahmath Online",
-    image: "../assets/img/portfolio/ecommerce/burkakart.jpg",
+    image: "assets/img/portfolio/ecommerce/burkakart.jpg",
     url: "",
     category: "ecommerce",
     platform: "Magento, HTML, CSS",
@@ -621,7 +620,7 @@ const portfolio = [
   {
     id: 49,
     name: "Salwar For Wholesale",
-    image: "../assets/img/portfolio/ecommerce/salwar-for-wholesale.jpg",
+    image: "assets/img/portfolio/ecommerce/salwar-for-wholesale.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -631,7 +630,7 @@ const portfolio = [
   {
     id: 50,
     name: "Auxus Sequra Tour",
-    image: "../assets/img/portfolio/static/auxus-sequra-tour.jpg",
+    image: "assets/img/portfolio/static/auxus-sequra-tour.jpg",
     url: "https://iberry.asia/sequra/takeatour/index.html",
     category: "static",
     platform: "HTML, CSS",
@@ -641,7 +640,7 @@ const portfolio = [
   {
     id: 51,
     name: "Euro Car Zone",
-    image: "../assets/img/portfolio/static/eurocarzone.jpg",
+    image: "assets/img/portfolio/static/eurocarzone.jpg",
     url: "",
     category: "static",
     platform: "HTML, CSS",
@@ -651,7 +650,7 @@ const portfolio = [
   {
     id: 52,
     name: "Genius Impex",
-    image: "../assets/img/portfolio/static/genius-impex.jpg",
+    image: "assets/img/portfolio/static/genius-impex.jpg",
     url: "",
     category: "static",
     platform: "HTML, CSS",
@@ -661,7 +660,7 @@ const portfolio = [
   {
     id: 53,
     name: "TIFA",
-    image: "../assets/img/portfolio/static/tifa.jpg",
+    image: "assets/img/portfolio/static/tifa.jpg",
     url: "",
     category: "static",
     platform: "HTML, CSS",
@@ -671,7 +670,7 @@ const portfolio = [
   {
     id: 54,
     name: "Baithul Hikma",
-    image: "../assets/img/portfolio/cms/baithul-hikma.jpg",
+    image: "assets/img/portfolio/cms/baithul-hikma.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -681,7 +680,7 @@ const portfolio = [
   {
     id: 55,
     name: "Betterfly",
-    image: "../assets/img/portfolio/cms/betterfly.jpg",
+    image: "assets/img/portfolio/cms/betterfly.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -691,7 +690,7 @@ const portfolio = [
   {
     id: 56,
     name: "Crescent English High School",
-    image: "../assets/img/portfolio/cms/cehs.jpg",
+    image: "assets/img/portfolio/cms/cehs.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -701,7 +700,7 @@ const portfolio = [
   {
     id: 57,
     name: "DNS Hikmah",
-    image: "../assets/img/portfolio/cms/dnshikmah.jpg",
+    image: "assets/img/portfolio/cms/dnshikmah.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -711,7 +710,7 @@ const portfolio = [
   {
     id: 58,
     name: "Farmerville",
-    image: "../assets/img/portfolio/cms/fmc.jpg",
+    image: "assets/img/portfolio/cms/fmc.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -721,7 +720,7 @@ const portfolio = [
   {
     id: 59,
     name: "Footfetish",
-    image: "../assets/img/portfolio/cms/footfetish.jpg",
+    image: "assets/img/portfolio/cms/footfetish.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -731,7 +730,7 @@ const portfolio = [
   {
     id: 60,
     name: "Kaway Group",
-    image: "../assets/img/portfolio/cms/kaway-group.jpg",
+    image: "assets/img/portfolio/cms/kaway-group.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -741,7 +740,7 @@ const portfolio = [
   {
     id: 61,
     name: "Label For Him",
-    image: "../assets/img/portfolio/cms/label-for-him.jpg",
+    image: "assets/img/portfolio/cms/label-for-him.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -751,7 +750,7 @@ const portfolio = [
   {
     id: 62,
     name: "Life Style 360",
-    image: "../assets/img/portfolio/cms/life-style-360.jpg",
+    image: "assets/img/portfolio/cms/life-style-360.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -761,7 +760,7 @@ const portfolio = [
   {
     id: 63,
     name: "Metal Shine",
-    image: "../assets/img/portfolio/cms/metal-shine.jpg",
+    image: "assets/img/portfolio/cms/metal-shine.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -771,7 +770,7 @@ const portfolio = [
   {
     id: 64,
     name: "Pixel Graphics",
-    image: "../assets/img/portfolio/cms/pixelgraphics.jpg",
+    image: "assets/img/portfolio/cms/pixelgraphics.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -781,7 +780,7 @@ const portfolio = [
   {
     id: 65,
     name: "Satish Photography",
-    image: "../assets/img/portfolio/cms/satish-photography.jpg",
+    image: "assets/img/portfolio/cms/satish-photography.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -791,7 +790,7 @@ const portfolio = [
   {
     id: 66,
     name: "Satish Photography Virtual Reality",
-    image: "../assets/img/portfolio/cms/satish_photography_virtual_reality.jpg",
+    image: "assets/img/portfolio/cms/satish_photography_virtual_reality.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -801,7 +800,7 @@ const portfolio = [
   {
     id: 67,
     name: "Southern Mercentile Service",
-    image: "../assets/img/portfolio/cms/sms.jpg",
+    image: "assets/img/portfolio/cms/sms.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -811,7 +810,7 @@ const portfolio = [
   {
     id: 68,
     name: "Sri Ramana Cartons",
-    image: "../assets/img/portfolio/cms/sri-ramana-cartons.jpg",
+    image: "assets/img/portfolio/cms/sri-ramana-cartons.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -821,7 +820,7 @@ const portfolio = [
   {
     id: 69,
     name: "SV Group",
-    image: "../assets/img/portfolio/cms/sv-group.jpg",
+    image: "assets/img/portfolio/cms/sv-group.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -831,7 +830,7 @@ const portfolio = [
   {
     id: 70,
     name: "Tabarak Travels",
-    image: "../assets/img/portfolio/cms/tabarak_travels.jpg",
+    image: "assets/img/portfolio/cms/tabarak_travels.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -841,7 +840,7 @@ const portfolio = [
   {
     id: 71,
     name: "Tasneem Shipping",
-    image: "../assets/img/portfolio/cms/tasneem-shipping-logistics.jpg",
+    image: "assets/img/portfolio/cms/tasneem-shipping-logistics.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -851,7 +850,7 @@ const portfolio = [
   {
     id: 72,
     name: "Techsys Group",
-    image: "../assets/img/portfolio/cms/techsys-group.jpg",
+    image: "assets/img/portfolio/cms/techsys-group.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -861,7 +860,7 @@ const portfolio = [
   {
     id: 73,
     name: "Times Login",
-    image: "../assets/img/portfolio/cms/timeslogin.jpg",
+    image: "assets/img/portfolio/cms/timeslogin.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -871,7 +870,7 @@ const portfolio = [
   {
     id: 74,
     name: "Ultratag LLC",
-    image: "../assets/img/portfolio/cms/ultratag-llc.jpg",
+    image: "assets/img/portfolio/cms/ultratag-llc.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -881,7 +880,7 @@ const portfolio = [
   {
     id: 75,
     name: "Vadim Infrastructure",
-    image: "../assets/img/portfolio/cms/vadim.jpg",
+    image: "assets/img/portfolio/cms/vadim.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -891,7 +890,7 @@ const portfolio = [
   {
     id: 76,
     name: "ML Autoparts",
-    image: "../assets/img/portfolio/cms/ml_autoparts.jpg",
+    image: "assets/img/portfolio/cms/ml_autoparts.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -901,7 +900,7 @@ const portfolio = [
   {
     id: 77,
     name: "Max Office Furnitures",
-    image: "../assets/img/portfolio/cms/maxoffice.jpg",
+    image: "assets/img/portfolio/cms/maxoffice.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -911,7 +910,7 @@ const portfolio = [
   {
     id: 78,
     name: "Lilly Labs",
-    image: "../assets/img/portfolio/cms/lillylabs.jpg",
+    image: "assets/img/portfolio/cms/lillylabs.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -921,7 +920,7 @@ const portfolio = [
   {
     id: 79,
     name: "Aqua Fishfood",
-    image: "../assets/img/portfolio/cms/aquafishfood.jpg",
+    image: "assets/img/portfolio/cms/aquafishfood.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -931,7 +930,7 @@ const portfolio = [
   {
     id: 80,
     name: "Fernandos Family",
-    image: "../assets/img/portfolio/cms/fernandosfamily.jpg",
+    image: "assets/img/portfolio/cms/fernandosfamily.jpg",
     url: "",
     category: "cms",
     platform: "Joomla, HTML, CSS",
@@ -941,7 +940,7 @@ const portfolio = [
   {
     id: 81,
     name: "Marwa Inter Trade",
-    image: "../assets/img/portfolio/cms/marwa.jpg",
+    image: "assets/img/portfolio/cms/marwa.jpg",
     url: "",
     category: "cms",
     platform: "Wordpress, HTML, CSS",
@@ -951,7 +950,7 @@ const portfolio = [
   {
     id: 82,
     name: "Cooked By Julie",
-    image: "../assets/img/portfolio/cms/cookedbyjulie.jpg",
+    image: "assets/img/portfolio/cms/cookedbyjulie.jpg",
     url: "",
     category: "cms",
     platform: "Wordpress, HTML, CSS",
