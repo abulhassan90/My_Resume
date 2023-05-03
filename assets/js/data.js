@@ -116,6 +116,7 @@ const portfolio = [
     ],
     date: "October, 2021",
   },
+
   {
     id: 4,
     name: "Wajaramedia",
@@ -172,6 +173,23 @@ const portfolio = [
       "Image Resize and Optimization",
     ],
     date: "December, 2016",
+  },
+  {
+    id: 6.1,
+    name: "Mschool",
+    image: "assets/img/portfolio/static/mschool.jpg",
+    url: "https://mschool-bootstrap.vercel.app",
+    category: "static",
+    platform: "HTML, CSS, Boostrap, JavaScript",
+    role: [
+      "BootStrap 5 Layout Design",
+      "Form Validation SignIn and SignUp",
+      "Youtube Video Embed",
+      "Animation Effect",
+      "Responsive Website Development",
+      "Image Resize and Optimization",
+    ],
+    date: "March, 2023",
   },
   {
     id: 7,
